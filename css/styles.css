@@ -108,7 +108,12 @@ div{
   margin: 0 auto;
 }
 .contact-body {
-  margin: 0 auto;
+  margin: auto;
+  text-align: left;
+}
+.contact-forms {
+  margin:auto;
+  text-align: left;
 }
 .page-header {
   display: flex;
