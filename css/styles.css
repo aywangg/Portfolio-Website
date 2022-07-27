@@ -2,8 +2,8 @@
   --bg-color: #F0F8FF;
   --link-visited-color: #05676E;
   --link-active-color: #FF9342;
-  --button-bg-color: #FF9342;
-  --text-color: #F0F8FF;
+  --button-bg-color: #2fcff7;
+  --text-color: #070708;
   --anchor-color: #357b70;
   --heading-font-weight: 700;
 }
@@ -53,7 +53,7 @@ button,
   /*takes the font from the outer container */
   font-family: inherit;
   /*styles the background color, font color, and the text decoration (underline, etc.) of the button */
-  background-color: var(--button-bg-color);
+  background-color: white;
   color: var(--text-color);
   text-decoration: none;
   /* adds spacing to the button (this will be discussed more in depth later)*/
@@ -90,17 +90,28 @@ div{
 .profile__portrait {
   float: left;
 }
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
+.social-media {
+  display: inline-flex;
   text-align: center;
+  margin: auto;
+}
+.page-footer {
+  display: inline-flex;
+  flex-direction: column;
+  clear: both;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  height: 7rem;
+  width: 100%;
 }
 .profile__portrait {
   float: left;
   width: 270px;
   height: auto;
-  margin-right:40px;
+  margin-right: 40px;
   border-radius: 50%;
 }
 .profile{
@@ -109,11 +120,11 @@ div{
 }
 .contact-body {
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 .contact-forms {
   margin:auto;
-  text-align: left;
+  text-align: center;
 }
 .page-header {
   display: flex;
@@ -182,33 +193,23 @@ div{
     font-size: 22px;
   }
 }
-
-@keyframes helicopter-move {
+.hometown {
+  display: block;
+  margin:auto;
+  top: 0px;
+}
+.about-profile {
+  max-width: 500px;
+  margin: auto;
+}
+.sunny {
+  animation: 5s color-change infinite alternate linear;
+}
+@keyframes color-change {
   from {
-    transform: translate(80px, 50px);
+    fill: #edc655;
   }
   to {
-    transform: translate(-30px, 50px);
+    fill: #f76414
   }
-}
-
-.helicopter {
-  animation-duration: 30s;
-  animation-name: helicopter-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes airplane-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.airplane {
-  animation: 30s airplane-move infinite alternate linear;
 }
