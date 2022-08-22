@@ -193,23 +193,15 @@ div{
     font-size: 22px;
   }
 }
-.hometown {
-  display: block;
-  margin:auto;
-  top: 0px;
-}
 .about-profile {
   max-width: 500px;
   margin: auto;
 }
-.sunny {
-  animation: 5s color-change infinite alternate linear;
+.car {
+  position: relative;
+  left: 130px;
+  top: 20px;
 }
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-  to {
-    fill: #f76414
-  }
+.car {
+  animation: 4s color-change infinite alternate linear;
 }
